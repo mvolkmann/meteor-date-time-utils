@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mvolkmann:date-time-utils',
-  version: '0.0.2',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'utility functions for dates and times',
   // URL to the Git repository containing the source code for this package.

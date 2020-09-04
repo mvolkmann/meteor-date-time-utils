@@ -1,7 +1,7 @@
 export const name = 'date-time-utils';
 
-const MS_PER_SECOND = 1000;
-const SECONDS_PER_MINUTE = 60;
+export const MS_PER_SECOND = 1000;
+export const SECONDS_PER_MINUTE = 60;
 
 export const minutesToMs = minutes =>
   minutes * SECONDS_PER_MINUTE * MS_PER_SECOND;
