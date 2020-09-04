@@ -3,6 +3,9 @@ export const name = 'date-time-utils';
 const MS_PER_SECOND = 1000;
 const SECONDS_PER_MINUTE = 60;
 
+export const minutesToMs = minutes =>
+  minutes * SECONDS_PER_MINUTE * MS_PER_SECOND;
+
 export function nextHourString() {
   const now = new Date();
   const hours = (now.getHours() + 1).toString().padStart(2, '0');

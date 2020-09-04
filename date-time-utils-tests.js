@@ -1,6 +1,7 @@
 import {Tinytest} from 'meteor/tinytest';
 
 import {
+  minutesToMs,
   name,
   nextHourString,
   nowDateString,
@@ -10,6 +11,12 @@ import {
 
 Tinytest.add('date-time-utils - name', test => {
   test.equal(name, 'date-time-utils');
+});
+
+Tinytest.add('date-time-utils - minutesToMs', test => {
+  test.equal(minutesToMs(0), 0);
+  test.equal(minutesToMs(1), 60000);
+  test.equal(minutesToMs(60), 3600000);
 });
 
 Tinytest.add('date-time-utils - nextHourString', test => {
